@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+$degradado: linear-gradient(60deg, rgba(0, 79, 159, 0.9) 10%, rgba(170, 0, 143, 0.6) 90%);
+$fondo_ppal: rgba(0, 79, 159, 0.9);
+$color_sec: rgba(234, 52, 176, 0.879);
+$fuente_ppal: "Quicksand", sans-serif;
+$fuente_sec: "Ubuntu", sans-serif;
+
+body {
+  font-family: $fuente_ppal;
+  font-size: 1.15em;
+}
+#logo {
+  width: 188px;
+  height: 30px;
+  background: url(../svg/createc-logo-bn.svg) center no-repeat;
+  @media screen and (max-width: 576px) {
+    width: 250px;
+    height: calc(250px / 8);
+  }
+}
+#logo-color {
+  width: 500px;
+  height: 120px;
+  background: url(../svg/createc-logo.svg) center no-repeat;
+  margin: 0 auto 1rem;
+  @media screen and (min-width: 992px) {
+    margin: 0;
+  }
+  @media screen and (max-width: 576px) {
+    width: 90vw;
+    height: 80px;
+  }
+}
+#logo-color-r {
+  width: 500px;
+  height: 120px;
+  background: url(../svg/createc-logo.svg) center no-repeat;
+  margin: 2rem auto 0;
+  @media screen and (max-width: 576px) {
+    width: 90vw;
+    height: calc(320px / 4);
+  }
+}
+.navbar a {
+  color: white !important;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.navbar-toggler, .navbar-toggler:focus {
+  border: none;
+  box-shadow: unset;
+}
+.navbar-toggler {
+  i {
+    color: white;
+    font-size: 2rem;
+  }
+}
+.navbar-brand {
+  font-size: 1rem;
+}
+.fondo {
+  background: $degradado, url(../img/fondo.jpg) no-repeat;
+  background-size: cover;
+}
+.nav-link {
+  margin: 0;
+  @media screen and (min-width: 768px) {
+    margin: 0 2rem;
+    padding: 0 .95em;
+  }
+}
+h3 {
+  font-family: $fuente_sec;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: $fondo_ppal;
+}
+.asistentes {
+  font-family: $fuente_sec;
+  font-size: 1.3rem;
+  color: $fondo_ppal;
+      i {
+        display: block;
+        font-size: 4rem;
+        color: transparentize($fondo_ppal, 0.35);
+        @media screen and (min-width: 768px) {
+          font-size: 3.5rem;
+        }
+      }
+      .dias {
+        font-size: 3rem;
+        color: $color_sec;
+      }
+      .borde {
+        border-left: none;
+        border-right: none;
+        border-top: 1px solid transparentize($fondo_ppal, 0.75);
+        border-bottom: 1px solid transparentize($fondo_ppal, 0.75);
+        @media screen and (min-width: 768px) {
+          border-left: 1px solid transparentize($fondo_ppal, 0.75);
+          border-right: 1px solid transparentize($fondo_ppal, 0.75);
+          border-top: none;
+          border-bottom: none;
+        }
+      }
+}
+.h1 {
+  color: white;
+  font-family: $fuente_sec;
+}
+.faltan {
+  width: 100%;
+  color: white;
+  @media screen and (min-width: 768px) {
+    width: 75%;
+  }
+  .h1 {
+    text-align: center;
+  }
+  tbody {
+    td {
+      width: 25%;
+      font-size: 4rem;
+      font-weight: bold;
+      text-align: center;
+      background: rgba(255,255,255,0.7);
+      color: $fondo_ppal;
+      @media screen and (max-width: 1200px) {
+        font-size: 3.5rem;
+      }
+      @media screen and (max-width: 768px) {
+        font-size: 2.5rem;
+      }
+    }
+  }
+  tfoot {
+    td {
+      font-size: 1.2rem;
+      text-align: center;
+      font-weight: bold;
+      padding-top: 0.8rem;
+      @media screen and (max-width: 576px) {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+.btn-ppal {
+  background: $degradado;
+  border: none;
+  color: white;
+  padding: 1rem 2rem;
+}
+.fondo_banner {
+  background: url(../img/fondo2.png) no-repeat;
+  background-position: center;
+  background-size: 80%;
+  height: 300px;
+  @media screen and (min-width: 768px) {
+    height: 400px;
+  }
+  @media screen and (min-width: 992px) {
+    height: 550px;
+  }
+  @media screen and (min-width: 1200px) {
+    height: 700px;
+  }
+}
+.fondo_banner_r {
+  background: url(../img/fondo2.png) no-repeat;
+  background-position: center;
+  background-size: 80%;
+}
+.foot {
+  font-size: 0.85rem;
+}
+figure {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid $fondo_ppal;
+  h3 {
+    text-transform: uppercase;
+    background: $degradado;
+  }
+  h4 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: $fondo_ppal;
+    text-transform: uppercase;
+    span {
+      i {
+        font-size: 1.5rem;
+        color: transparentize($fondo_ppal, 0.25);
+      }
+    }
+  }
+  h6 {
+    text-transform: capitalize;
+    font-size: 0.7em;
+    span {
+      font-weight: 700;
+    }
+  }
+  p {
+    border-left: 4px solid $fondo_ppal;
+    padding-left: 1rem;
+    font-size: 0.9em;
+  }
+}
+.iconos {
+  i {
+    font-size: 2em;
+    color: transparentize($color_sec, 0.5);
+  }
+}
